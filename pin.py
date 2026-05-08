@@ -2,9 +2,9 @@ correctpin = "2836"
 
 
 def verifypin():
-    entered_pin = input("Enter your PIN: ")
+    enteredpin = input("Enter your PIN: ")
 
-    if entered_pin == correctpin:
+    if enteredpin == correctpin:
         return True
 
     else:
