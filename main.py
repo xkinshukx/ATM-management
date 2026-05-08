@@ -1,9 +1,9 @@
-from atm import check_balance, deposit_money, withdraw_money
-from pin import verify_pin
+from atm import checkbalance, depositmoney, withdrawmoney
+from pin import verifypin
 
-print("===== Welcome to ATM =====")
+print("----Welcome to Scammers Bank----")
 
-if verify_pin():
+if verifypin():
 
     while True:
 
@@ -15,13 +15,13 @@ if verify_pin():
         choice = input("Choose an option: ")
 
         if choice == "1":
-            check_balance()
+            checkbalance()
 
         elif choice == "2":
-            deposit_money()
+            depositmoney()
 
         elif choice == "3":
-            withdraw_money()
+            withdrawmoney()
 
         elif choice == "4":
             print("Thank you for using ATM.")

@@ -1,11 +1,11 @@
 import database
 
 
-def check_balance():
+def checkbalance():
     print(f"Your balance is ₹{database.balance}")
 
 
-def deposit_money():
+def depositmoney():
     amount = float(input("Enter amount to deposit: ₹"))
 
     database.balance += amount
@@ -14,7 +14,7 @@ def deposit_money():
     print(f"Updated Balance: ₹{database.balance}")
 
 
-def withdraw_money():
+def withdrawmoney():
     amount = float(input("Enter amount to withdraw: ₹"))
 
     if amount <= database.balance:

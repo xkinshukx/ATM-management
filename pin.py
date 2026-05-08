@@ -1,10 +1,10 @@
-correct_pin = "1234"
+correctpin = "2836"
 
 
-def verify_pin():
+def verifypin():
     entered_pin = input("Enter your PIN: ")
 
-    if entered_pin == correct_pin:
+    if entered_pin == correctpin:
         return True
 
     else:
