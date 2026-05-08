@@ -24,4 +24,4 @@ def withdrawmoney():
         print(f"Remaining Balance: ₹{database.balance}")
 
     else:
-        print("Insufficient balance!")
+        print("Insufficient balance")
