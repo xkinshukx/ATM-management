@@ -6,6 +6,7 @@ print("===== Welcome to ATM =====")
 if verify_pin():
 
     while True:
+
         print("\n1. Check Balance")
         print("2. Deposit Money")
         print("3. Withdraw Money")
