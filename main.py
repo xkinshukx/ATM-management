@@ -22,23 +22,19 @@ if verifypin():
         print("4. Exit")
 
         speak("Select an option")
-        speak("Option 1 Check Balance")
-        speak("Option 2 Deposit Money")
-        speak("Option 3 Withdraw Money")
-        speak("Option 4 Exit")
 
         choice = input("Select an option: ")
 
-        if choice == "1":
+        if choice == "1" or choice == "Check Balance".upper():
             checkbalance()
 
-        elif choice == "2":
+        elif choice == "2"or choice == "Deposit Money".upper():
             depositmoney()
 
-        elif choice == "3":
+        elif choice == "3"or choice == "Withdraw Money".upper():
             withdrawmoney()
 
-        elif choice == "4":
+        elif choice == "4"or choice == "Exit".upper():
             print("Thankyou for using the ATM.")
             speak("Thankyou for using the ATM")
             break
