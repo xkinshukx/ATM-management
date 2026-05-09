@@ -28,4 +28,5 @@ def verifypin():
 
     else:
         print("Incorrect PIN.. Access Denied.")
+        speak("Incorrect PIN Access Denied")
         return False
