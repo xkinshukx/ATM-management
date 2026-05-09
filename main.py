@@ -4,7 +4,6 @@ from pin import verifypin
 from gtts import gTTS
 from playsound import playsound
 
-
 def speak(text):
 
     voice = gTTS(
