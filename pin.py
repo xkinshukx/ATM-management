@@ -10,6 +10,7 @@ correctpin = "2836"
 
 
 def verifypin():
+    speak("Enter your pin")
     enteredpin = input("Enter your PIN: ")
 
     if enteredpin == correctpin:
