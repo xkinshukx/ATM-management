@@ -32,6 +32,10 @@ if verifypin():
         print("4. Exit")
 
         speak("Select an option")
+        speak("Option 1 Check Balance")
+        speak("Option 2 Deposite Money")
+        speak("Option 3 Withdraw Money")
+        speak("Option 4 Exit")
 
         choice = input("Select an option: ")
 
