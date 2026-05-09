@@ -1,7 +1,16 @@
 from atm import checkbalance, depositmoney, withdrawmoney
 from pin import verifypin
+import pyttsx3
+engine = pyttsx3.init()
 
-print("----Welcome to Scammers Bank----")
+
+def speak(text):
+    engine.say(text)
+    engine.runAndWait()
+
+
+print("Welcome to Scammers Bank")
+speak("Welcome to Scammers Bank")
 
 if verifypin():
 
@@ -12,7 +21,13 @@ if verifypin():
         print("3. Withdraw Money")
         print("4. Exit")
 
-        choice = input("Choose an option: ")
+        speak("Select an option")
+        speak("Option 1 Check Balance")
+        speak("Option 2 Deposit Money")
+        speak("Option 3 Withdraw Money")
+        speak("Option 4 Exit")
+
+        choice = input("Select an option: ")
 
         if choice == "1":
             checkbalance()
@@ -24,8 +39,10 @@ if verifypin():
             withdrawmoney()
 
         elif choice == "4":
-            print("Thank you for using ATM.")
+            print("Thankyou for using the ATM.")
+            speak("Thankyou for using the ATM")
             break
 
         else:
-            print("Invalid choice!")
+            print("Invalid choice")
+            speak("Invalid choice")
