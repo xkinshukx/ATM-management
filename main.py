@@ -1,12 +1,22 @@
+import os
 from atm import checkbalance, depositmoney, withdrawmoney
 from pin import verifypin
-import pyttsx3
-engine = pyttsx3.init()
+from gtts import gTTS
+from playsound import playsound
 
 
 def speak(text):
-    engine.say(text)
-    engine.runAndWait()
+
+    voice = gTTS(
+        text=text,
+        lang="en",
+        slow=False
+    )
+    if os.path.exists("voice.mp3"):
+        os.remove("voice.mp3")
+
+    voice.save("voice.mp3")
+    playsound("voice.mp3")
 
 
 print("Welcome to Scammers Bank")

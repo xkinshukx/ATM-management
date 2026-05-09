@@ -1,10 +1,20 @@
-import pyttsx3
-engine = pyttsx3.init()
+import os
+from gtts import gTTS
+from playsound import playsound
 
 
 def speak(text):
-    engine.say(text)
-    engine.runAndWait()
+
+    voice = gTTS(
+        text=text,
+        lang="en",
+        slow=False
+    )
+    if os.path.exists("voice.mp3"):
+        os.remove("voice.mp3")
+
+    voice.save("voice.mp3")
+    playsound("voice.mp3")
 
 correctpin = "2836"
 
