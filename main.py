@@ -48,8 +48,8 @@ if verifypin():
             withdrawmoney()
 
         elif choice == "4"or choice == "Exit".upper():
-            print("Thankyou for using the ATM.")
-            speak("Thankyou for using the ATM")
+            print("Thankyou for using the ATM. You have been scammed")
+            speak("Thankyou for using the ATM. You have been scammed")
             break
 
         else:
