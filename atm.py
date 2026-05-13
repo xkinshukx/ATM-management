@@ -46,5 +46,5 @@ def withdrawmoney():
         speak(f"Remaining Balance: ₹{database.balance}")
 
     else:
-        print("Insufficent Balance..Get a job")
+        print("Insufficent Balance.. Get a job")
         speak("Insufficent Balance..Get a job")
