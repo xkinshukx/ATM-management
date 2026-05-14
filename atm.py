@@ -37,6 +37,7 @@ def withdrawmoney():
     amount = float(input("Enter amount to withdraw: ₹"))
 
     if amount <= database.balance:
+        
         database.balance -= amount
 
         print(f"₹{amount} withdrawn successfully.")
